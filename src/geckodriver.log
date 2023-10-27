@@ -1,0 +1,18 @@
+1698395534373	geckodriver	INFO	Listening on 127.0.0.1:60672
+1698395537400	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60673" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40724\\AppData\\Local\\Temp\\rust_mozprofilebeX70v"
+1698395651614	geckodriver	INFO	Listening on 127.0.0.1:60771
+1698395654672	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60772" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40724\\AppData\\Local\\Temp\\rust_mozprofileSnvk0h"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698395655478	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1698395655636	Marionette	INFO	Listening on port 60782
+WebDriver BiDi listening on ws://127.0.0.1:60772
+Read port: 60782
+1698395655985	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60772/devtools/browser/672c2351-82de-434a-b459-ca2addd62603
+JavaScript warning: https://bstackdemo.com/_next/static/chunks/main-127f4130b2ee8251cb07.js, line 1: Script terminated by timeout at:
+l@https://bstackdemo.com/_next/static/chunks/main-127f4130b2ee8251cb07.js:1:12105
+
+1698395668031	Marionette	INFO	Stopped listening on port 60782
+Dynamically enable window occlusion 1

@@ -1,0 +1,29 @@
+1698399177490	geckodriver	INFO	Listening on 127.0.0.1:62436
+1698399180571	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40724\\AppData\\Local\\Temp\\rust_mozprofile7MSeTq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698399181875	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1698399182167	Marionette	INFO	Listening on port 62444
+WebDriver BiDi listening on ws://127.0.0.1:62437
+Read port: 62444
+1698399182673	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62437/devtools/browser/ea800e8a-2f19-4f0f-982b-48de11ed9039
+JavaScript warning: https://bstackdemo.com/_next/static/chunks/main-127f4130b2ee8251cb07.js, line 1: Script terminated by timeout at:
+l@https://bstackdemo.com/_next/static/chunks/main-127f4130b2ee8251cb07.js:1:12105
+
+1698399203255	Marionette	INFO	Stopped listening on port 62444
+Dynamically enable window occlusion 1
+1698399271711	geckodriver	INFO	Listening on 127.0.0.1:62483
+1698399274752	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62484" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40724\\AppData\\Local\\Temp\\rust_mozprofileKv6ZO2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698399275551	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1698399275687	Marionette	INFO	Listening on port 62492
+WebDriver BiDi listening on ws://127.0.0.1:62484
+Read port: 62492
+1698399276001	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62484/devtools/browser/809d42fc-af2c-44a4-99b2-b222c2709f6a
+1698399284504	Marionette	INFO	Stopped listening on port 62492
+Dynamically enable window occlusion 1
