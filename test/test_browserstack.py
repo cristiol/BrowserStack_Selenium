@@ -14,8 +14,15 @@ class Signin(SignInPage):
         self.sign_in()
 
 
-def test_checkout():
+@pytest.fixture(scope="function")
+def driver():
     driver = webdriver.Chrome()
+    yield driver
+    driver.quit()
+
+
+def test_checkout(driver):
+
     check = CheckOut(driver)
     homepage = Homepage(driver)
 
@@ -34,16 +41,16 @@ def test_checkout():
     check.get_confirmation_message()
 
 
-def test_copyright():
-    driver = webdriver.Chrome()
+def test_copyright(driver):
+
     driver.get('https://bstackdemo.com/')
 
     homepage = Homepage(driver)
     homepage.copyright()
 
 
-def test_browserstack():
-    driver = webdriver.Chrome()
+def test_browserstack(driver):
+
     test = Signin(driver)
     test.signin_with_good_credentials()
 
@@ -51,8 +58,8 @@ def test_browserstack():
     homepage.get_username()
 
 
-def test_vendors():
-    driver = webdriver.Chrome()
+def test_vendors(driver):
+
     test = Signin(driver)
     test.signin_with_good_credentials()
 
@@ -60,8 +67,8 @@ def test_vendors():
     vendor.check_vendor()
 
 
-def test_add():
-    driver = webdriver.Chrome()
+def test_add(driver):
+
     test = Signin(driver)
     test.signin_with_good_credentials()
 
@@ -69,8 +76,8 @@ def test_add():
     cart.click_cart()
 
 
-def test_favourites():
-    driver = webdriver.Chrome()
+def test_favourites(driver):
+
     test = Signin(driver)
     test.signin_with_good_credentials()
 
@@ -80,8 +87,8 @@ def test_favourites():
     homepage.check_favourite_page()
 
 
-def test_remove_from_cart():
-    driver = webdriver.Chrome()
+def test_remove_from_cart(driver):
+
     test = Signin(driver)
     test.signin_with_good_credentials()
 
@@ -90,8 +97,8 @@ def test_remove_from_cart():
     homepage.remove_cart()
 
 
-def test_quantity_selection():
-    driver = webdriver.Chrome()
+def test_quantity_selection(driver):
+
     test = Signin(driver)
     test.signin_with_good_credentials()
 
