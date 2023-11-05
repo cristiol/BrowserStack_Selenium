@@ -27,13 +27,16 @@ class Homepage(PageFactory):
         "copyright_text": ('XPATH', '//*[@id="__next"]/div/div/footer/div/div/div/span')
     }
 
+    # Click the "Sign In" button
     def click_sign_in(self):
         self.sign_in.click()
 
+    # Get the username and assert it
     def get_username(self):
         retrieved_username = self.user_name.get_text()
         assert retrieved_username == "demouser"
 
+    # Check the vendor labels
     def check_vendor(self):
         retrieved_apple = self.apple.get_text()
         assert retrieved_apple == 'Apple'
@@ -47,22 +50,27 @@ class Homepage(PageFactory):
         retrieved_oneplus = self.oneplus.get_text()
         assert retrieved_oneplus == 'OnePlus'
 
+    # Add an item to the cart
     def add_to_cart(self):
         self.add_to_cart_btn.click()
 
+    # Click on the cart icon
     def click_cart(self):
         self.cart.click()
 
+    # Verify copyright notice
     def copyright(self):
         copyright_text = self.copyright_text.get_text()
         assert '2023' in copyright_text
         self.driver.quit()
 
+    # Remove an item from the cart and check if it's empty
     def remove_cart(self):
         self.remove_cart_btn.click()
         empty_card_message = self.empty_card.get_text()
         assert 'Add some products in the bag' in empty_card_message
 
+    # Add and remove quantity of items in the cart
     def quantity_selection(self):
         self.add_quantity.click()
         assert self.bag__quantity.get_text() == '2'
@@ -70,15 +78,19 @@ class Homepage(PageFactory):
         self.remove_quantity.click()
         assert self.bag__quantity.get_text() == '1'
 
+    # Click the "Checkout" button
     def click_checkout(self):
         self.checkout.click()
 
+    # Add an item to favorites
     def add_to_favourites(self):
         self.add_favourite_btn.click()
 
+    # Click on the "Favourites" button
     def click_favourites_btn(self):
         self.favourites_btn.click()
 
+    # Check the text indicating the number of products found in favorites
     def check_favourite_page(self):
         products_found = self.products_found.get_text()
         assert products_found == '1 Product(s) found.'
