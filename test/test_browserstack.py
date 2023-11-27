@@ -17,12 +17,14 @@ class Signin(SignInPage):
         # Perform the sign-in
         self.sign_in()
 
+
 # Fixture for managing the driver session
 @pytest.fixture(scope="function")
 def driver():
     driver = webdriver.Chrome()
     yield driver
     driver.quit()
+
 
 # Test for the checkout process
 def test_checkout(driver):
