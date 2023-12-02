@@ -46,6 +46,7 @@ def test_checkout(driver):
     check.click_submit()
     check.get_confirmation_message()
 
+
 # Test for checking copyright
 def test_copyright(driver):
     # Open the main page
@@ -53,6 +54,7 @@ def test_copyright(driver):
     # Check the copyright notice
     homepage = Homepage(driver)
     homepage.copyright()
+
 
 # test for sign in
 def test_browserstack(driver):
@@ -63,6 +65,7 @@ def test_browserstack(driver):
     homepage = Homepage(driver)
     homepage.get_username()
 
+
 # Test for checking vendors
 def test_vendors(driver):
 
@@ -72,6 +75,7 @@ def test_vendors(driver):
     vendor = Homepage(driver)
     vendor.check_vendor()
 
+
 # Test for adding items to the cart
 def test_add(driver):
 
@@ -80,6 +84,7 @@ def test_add(driver):
 
     cart = Homepage(driver)
     cart.click_cart()
+
 
 # Test for adding items to favorites
 def test_favourites(driver):
@@ -92,6 +97,7 @@ def test_favourites(driver):
     homepage.click_favourites_btn()
     homepage.check_favourite_page()
 
+
 # Test for removing items from the cart
 def test_remove_from_cart(driver):
 
@@ -101,6 +107,7 @@ def test_remove_from_cart(driver):
     homepage = Homepage(driver)
     homepage.add_to_cart()
     homepage.remove_cart()
+
 
 # Test for selecting quantity
 def test_quantity_selection(driver):
